@@ -173,7 +173,7 @@ nav img:hover{
 
 .intro-item button {
     display: block;
-    margin: 20px auto;
+    margin: auto;
     padding: 10px 40px;
     font-size: 24px;
     font-weight: 700;
@@ -350,6 +350,7 @@ nav img:hover{
     display: flex;
     flex-direction: row;
     align-items: center; 
+    text-align: justify;
     justify-content: center; 
     gap: 50px;
     padding: 0 48px;
@@ -510,4 +511,289 @@ iframe {
 .copyright {
     margin-top: 50px;
     font-size: 14px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar{
+        margin-right: 150px;
+    }
+    .navbar a {
+        display: fixed;
+        font-size: 10px;
+        margin: 10px 0;
+    }
+
+    .go-to-top-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        margin-right: 142px;
+    }
+
+    .intro-fonts button {
+        font-size: 8px;
+        padding: 8px 16px;
+        margin-bottom: 695px;
+    }
+
+    .intro-item img{
+        max-height: auto;
+        width: 100%;
+        max-width: 100%;
+        height: 100%; 
+        position: relative;
+        z-index: -1;
+        filter: opacity(50%);
+        filter: brightness(50%);
+        border-radius: 4px;
+    }
+
+    .slideshow-container {
+        flex-direction: column;
+    }
+
+    .slide a {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    .overlay {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .location {
+        flex-direction: column;
+    }
+
+    .location-item {
+        width: 50%;
+        height:50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        text-align: justify;
+        justify-content: center; 
+        gap: 50px;
+        padding: 0 48px;
+    }
+
+    .location-item h1{
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 10px;
+        margin: 10px 0;
+        margin-right: 150px;
+    }
+    
+    .location-item h2{
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-wrap:wrap;
+        margin: 10px 0;
+        margin-right: 150px;
+    }
+    
+
+    .dropdown-header {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .dropdown-content {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .footer-item {
+        flex-direction: column;
+    }
+
+    .social-media i {
+        font-size: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .intro-fonts button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .slide a {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .overlay {
+        padding: 5px;
+    }
+
+    .location-item {
+        max-width: 100%;
+    }
+
+    .dropdown-header {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .dropdown-content {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .footer-item {
+        flex-direction: column;
+    }
+
+    .social-media i {
+        font-size: 18px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar a {
+        margin: 10px 5px;
+    }
+
+    .intro-fonts button {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-bottom: 1290px;
+    }
+
+    .slide a {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    .overlay {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .location-item {
+        max-width: 100%;
+        height: 50;
+        text-align: ju;
+    }
+
+    .dropdown-header {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .dropdown-content {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+
+    .footer-item {
+        flex-direction: column;
+    }
+
+    .social-media i {
+        font-size: 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar a {
+        margin: 10px 10px;
+    }
+
+    .intro-fonts button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-bottom: 1150px;
+    }
+
+    .slide a {
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+
+    .overlay {
+        padding: 15px;
+    }
+
+    .location-item {
+        max-width: 100%;
+    }
+
+    .dropdown-header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .dropdown-content {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .footer-item {
+        flex-direction: row;
+    }
+
+    .social-media i {
+        font-size: 22px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navbar a {
+        margin: 10px 15px;
+    }
+
+    .intro-fonts button {
+        font-size: 18px;
+        padding: 12px 24px;
+        margin-top: 0px;
+    }
+
+    .slide a {
+        font-size: 24px;
+        padding: 12px 24px;
+    }
+
+    .overlay {
+        padding: 20px;
+    }
+
+    .location-item {
+        max-width: 100%;
+    }
+
+    .dropdown-header {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .dropdown-content {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .footer-item {
+        flex-direction: row;
+    }
+
+    .social-media i {
+        font-size: 24px;
+    }
 }
